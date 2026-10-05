@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dra. Letícia Teio · Odontologia em São João da Boa Vista</title>
+<meta name="description" content="Clínica especializada em odontologia geral, com atendimento personalizado, moderno e humanizado em São João da Boa Vista - SP.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Allura&family=Figtree:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --rose:#a65a61; --rose-d:#8f464e; --rose-l:#e9b9b9; --ink:#141012; --muted:#4a3d3f;
+  --bg:#fbeeee; --card:rgba(255,255,255,.72); --green:#a9d98c; --green-d:#1d3a14;
+  --serif:'Playfair Display',Georgia,serif; --sans:'Figtree',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{overflow-x:hidden}
+body{font-family:var(--sans);color:var(--ink);background:linear-gradient(180deg,#fff7f6 0%,#f9e4e3 55%,#f4d3d3 100%);-webkit-font-smoothing:antialiased;line-height:1.5}
+img{max-width:100%;display:block}
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:var(--serif);font-weight:500;letter-spacing:-.02em;line-height:1.05}
+h1 em,h2 em{font-style:normal;color:var(--rose)}
+.eyebrow{font-size:.72rem;letter-spacing:.38em;text-transform:uppercase;color:var(--rose-l);color:#c58c8f;margin-bottom:14px;font-weight:500}
+
+/* botão */
+.btn{display:inline-flex;align-items:center;gap:14px;background:var(--green);color:var(--green-d);font-weight:700;font-size:1.1rem;
+  padding:17px 34px;border-radius:999px;text-decoration:none;box-shadow:0 10px 26px -8px rgba(110,170,80,.55);transition:transform .2s,box-shadow .2s,background .2s}
+.btn:hover{transform:translateY(-2px);background:#9bd07c;box-shadow:0 16px 30px -10px rgba(110,170,80,.7)}
+.btn:active{transform:translateY(0)}
+.btn svg{width:22px;height:22px;flex:none}
+.btn .arr{width:18px;height:18px}
+
+/* hero */
+.hero{position:relative;overflow:hidden}
+.hero .wrap{display:block;min-height:660px}
+.hero-txt{width:52%}
+.hero-txt{padding:48px 0 56px;position:relative;z-index:2;display:flex;flex-direction:column;justify-content:center}
+.logo{margin-bottom:36px}
+.logo img{display:block;width:min(440px,100%);height:auto}
+h1{font-size:clamp(2.9rem,6vw,4.6rem);margin-bottom:22px}
+h1 span{display:block}
+.lead{font-size:1.2rem;color:var(--muted);max-width:30ch;margin-bottom:30px}
+.lead b{color:var(--rose-d);font-weight:700}
+.badges{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:38px;max-width:500px}
+.badge{text-align:center;font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);line-height:1.35}
+.badge i{display:grid;place-items:center;width:56px;height:56px;margin:0 auto 10px;border:1.4px solid var(--rose);border-radius:50%}
+.badge svg{width:26px;height:26px;stroke:var(--rose);fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.hero-img{position:absolute;top:0;bottom:0;right:0;width:50%}
+.hero-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 20%;
+  -webkit-mask-image:linear-gradient(90deg,transparent 0,#000 22%),linear-gradient(0deg,transparent 0,#000 18%);mask-image:linear-gradient(90deg,transparent 0,#000 22%),linear-gradient(0deg,transparent 0,#000 18%);-webkit-mask-composite:source-in;mask-composite:intersect}
+
+/* atendimentos */
+.sec{padding:88px 0;position:relative}
+
+.atend{overflow:hidden}
+.atend .smile{position:absolute;right:0;top:0;width:min(46%,560px);height:400px;
+  -webkit-mask-image:linear-gradient(90deg,transparent 0,#000 40%),linear-gradient(0deg,transparent 0,#000 30%),linear-gradient(180deg,transparent 0,#000 25%);mask-image:linear-gradient(90deg,transparent 0,#000 40%),linear-gradient(0deg,transparent 0,#000 30%),linear-gradient(180deg,transparent 0,#000 25%);-webkit-mask-composite:source-in;mask-composite:intersect}
+.atend .smile img{width:100%;height:100%;object-fit:cover;object-position:50% 30%}
+.atend .head{position:relative;z-index:2;max-width:640px}
+h2{font-size:clamp(2.3rem,4.4vw,3.3rem);margin-bottom:16px}
+.head p{font-size:1.15rem;color:var(--muted);max-width:34ch}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:130px;position:relative;z-index:2}
+.card{background:var(--card);backdrop-filter:blur(8px);border-radius:14px;padding:26px 26px 30px;box-shadow:0 14px 40px -22px rgba(143,70,78,.35)}
+.card i{display:grid;place-items:center;width:64px;height:64px;border-radius:50%;background:#f5d3d4;margin-bottom:22px}
+.card svg{width:32px;height:32px;stroke:var(--rose);fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.card h3{font-size:1.55rem;margin-bottom:10px}
+.card p{color:var(--muted);font-size:1.02rem}
+
+/* sobre */
+.sobre-grid{display:grid;grid-template-columns:1.25fr 1fr;gap:56px;align-items:start}
+.sobre p{color:var(--muted);font-size:1.08rem;margin-bottom:16px;max-width:52ch}
+.sobre p b{color:var(--ink)}
+.feat{display:grid;gap:20px;position:relative;padding-top:6px}
+.feat li{list-style:none;display:flex;align-items:center;gap:18px;font-size:1.05rem;color:var(--muted)}
+.feat i{flex:none;display:grid;place-items:center;width:66px;height:66px;border:1.4px solid var(--rose);border-radius:50%}
+.feat svg{width:30px;height:30px;stroke:var(--rose);fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.espelho{position:absolute;right:-24px;top:-60px;width:150px;opacity:.95;pointer-events:none;
+  -webkit-mask-image:radial-gradient(closest-side,#000 60%,transparent);mask-image:radial-gradient(closest-side,#000 60%,transparent)}
+.local{display:grid;grid-template-columns:1fr 1fr;gap:0;background:var(--card);border-radius:14px;padding:22px 26px;margin-top:34px;max-width:600px}
+.local > div{display:flex;gap:16px;align-items:flex-start}
+.local > div + div{border-left:1px solid #e3b9ba;padding-left:26px}
+.local svg{flex:none;width:34px;height:34px;stroke:var(--rose);fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.local small{display:block;font-size:.62rem;letter-spacing:.36em;text-transform:uppercase;color:#c58c8f;margin-bottom:8px}
+.local address{font-style:normal;font-size:.95rem;color:var(--muted);line-height:1.5}
+.cta-box{display:flex;justify-content:flex-end;align-items:center;margin-top:34px}
+
+footer{text-align:center;padding:30px 24px 110px;font-size:.85rem;color:#8a6f71}
+
+/* botão flutuante mobile */
+.float{position:fixed;left:16px;right:16px;bottom:16px;z-index:50;display:none;justify-content:center;box-shadow:0 14px 34px -8px rgba(60,110,40,.6)}
+
+@media (max-width:900px){
+  .hero .wrap{min-height:0;display:flex;flex-direction:column}
+  .hero-img{order:-1}
+  .hero-txt{width:auto}
+  .hero-txt{padding:0 0 8px;margin-top:-4px}
+  .logo{margin-bottom:20px}
+  .logo img{width:min(320px,80%)}
+  .lead{max-width:none}
+  .hero-img{position:relative;width:auto;height:400px;margin:0 -24px}
+  .hero-img img{-webkit-mask-image:linear-gradient(0deg,transparent 0,#000 22%);mask-image:linear-gradient(0deg,transparent 0,#000 22%);object-position:60% 15%}
+  .badges{grid-template-columns:repeat(2,1fr);gap:22px;margin-bottom:30px;max-width:none}
+  .sec{padding:60px 0}
+  .atend .smile{width:100%;height:230px;opacity:.55;-webkit-mask-image:linear-gradient(0deg,transparent 0,#000 80%);mask-image:linear-gradient(0deg,transparent 0,#000 80%)}
+  .atend .head{padding-top:150px}
+  .cards{grid-template-columns:1fr;margin-top:36px}
+  .sobre-grid{grid-template-columns:1fr;gap:34px}
+  .espelho{display:none}
+  .local{grid-template-columns:1fr;gap:20px}
+  .local > div + div{border-left:0;padding-left:0;border-top:1px solid #e3b9ba;padding-top:20px}
+  .cta-box{justify-content:center}
+  .float{display:flex}
+  .btn{font-size:1.05rem;padding:16px 28px}
+}
+</style>
+</head>
+<body>
+
+<!-- ícones reutilizáveis -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-cal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15" rx="2.5"/><path d="M8 3v4M16 3v4M3.5 10h17"/><path d="M8 14h.01M12 14h.01M16 14h.01M8 17h.01M12 17h.01"/></symbol>
+  <symbol id="i-arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></symbol>
+  <symbol id="i-tooth" viewBox="0 0 32 32"><path d="M9.5 5.5c-3 0-5 2.4-5 5.6 0 2.4 1 4 1.6 6.2.7 2.8.8 6.4 2.2 8.6.9 1.3 2.1.8 2.6-.6.7-1.9 1-4.8 2.6-4.8h.1c1.6 0 1.9 2.9 2.6 4.8.5 1.4 1.7 1.9 2.6.6 1.4-2.2 1.5-5.8 2.2-8.6.6-2.2 1.6-3.8 1.6-6.2 0-3.2-2-5.6-5-5.6-2.2 0-3 1-4.8 1s-2.6-1-4.8-1z"/></symbol>
+</svg>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="hero-txt">
+      <div class="logo"><img src="img/logo.png" alt="Letícia Borges Teio · Cirurgiã Dentista · CROMG 79645" width="1200" height="413"></div>
+      <h1><span>Seu sorriso,</span><em>em boas mãos.</em></h1>
+      <p class="lead">Atendimento conduzido pela <b>Dra. Letícia Borges Teio</b>, cirurgiã-dentista, com cuidado personalizado, moderno e humanizado em <b>São João da Boa Vista.</b></p>
+      <div><a class="btn wa" href="#"><svg><use href="#i-cal"/></svg>Agendar sua avaliação<svg class="arr"><use href="#i-arr"/></svg></a></div>
+      <div class="badges">
+        <div class="badge"><i><svg viewBox="0 0 24 24"><path d="M6 3h12l4 6-10 12L2 9z"/><path d="M2 9h20M9 3l-2 6 5 12 5-12-2-6"/></svg></i>Atendimento<br>personalizado</div>
+        <div class="badge"><i><svg viewBox="0 0 32 32"><use href="#i-tooth"/></svg></i>Odontologia<br>geral</div>
+        <div class="badge"><i><svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 4.500-3.300 7.800-8 9-4.700-1.200-8-4.500-8-9V6z"/><path d="M8.500 12l2.500 2.500 4.500-5"/></svg></i>Estrutura<br>moderna</div>
+        <div class="badge"><i><svg viewBox="0 0 24 24"><path d="M12 20.500S3 15 3 8.800C3 6 5 4 7.500 4c1.700 0 3.400 1 4.500 2.700C13.100 5 14.800 4 16.500 4 19 4 21 6 21 8.800 21 15 12 20.500 12 20.500z"/></svg></i>Cuidado<br>humanizado</div>
+      </div>
+    </div>
+    <div class="hero-img"><img src="img/doutora.jpg" alt="Dra. Letícia Teio, cirurgiã-dentista" fetchpriority="high"></div>
+  </div>
+</header>
+
+<section class="sec atend">
+  <div class="smile"><img src="img/sorriso.jpg" alt="" loading="lazy"></div>
+  <div class="wrap">
+    <div class="head">
+      <div class="eyebrow">Meus atendimentos</div>
+      <h2>Odontologia completa <em>para todas as fases da sua vida.</em></h2>
+      <p>Cuidado, estética e funcionalidade, sempre com um olhar individualizado para o seu sorriso.</p>
+    </div>
+    <div class="cards">
+      <article class="card"><i><svg viewBox="0 0 32 32"><use href="#i-tooth"/></svg></i><h3>Clínica Geral</h3><p>Prevenção, diagnóstico e tratamento para a sua saúde bucal.</p></article>
+      <article class="card"><i><svg viewBox="0 0 32 32"><path d="M13 5c.6 5.400 2.600 7.400 8 8-5.400.6-7.400 2.600-8 8-.6-5.400-2.600-7.400-8-8 5.400-.6 7.400-2.600 8-8z"/><path d="M23.500 3.500c.3 2.200 1.100 3 3.300 3.300-2.200.3-3 1.100-3.300 3.300-.3-2.200-1.100-3-3.300-3.300 2.200-.3 3-1.100 3.300-3.300zM24 20c.3 2.200 1.100 3 3.300 3.300-2.200.3-3 1.100-3.300 3.300-.3-2.200-1.100-3-3.300-3.300 2.200-.3 3-1.100 3.300-3.300z"/></svg></i><h3>Estética</h3><p>Procedimentos que valorizam a sua beleza natural, com resultados harmônicos.</p></article>
+      <article class="card"><i><svg viewBox="0 0 32 32"><path d="M10 4h12c1.700 0 2.600 1.700 2.200 3.600L23 13c-.4 1.800-1 2.600-2.200 3.400l-.8 6.100c-.2 1.500-1 2.500-2 2.500h-4c-1 0-1.800-1-2-2.500L11.200 16.400C10 15.600 9.400 14.800 9 13L7.800 7.600C7.400 5.700 8.300 4 10 4z" transform="translate(0 -1)"/><path d="M10.500 9.500h11" transform="translate(0 -1)"/><path d="M16 24v4" /></svg></i><h3>Reabilitação Oral</h3><p>Soluções funcionais e estéticas para devolver a mastigação, a saúde e a confiança.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="sec sobre">
+  <div class="wrap">
+    <div class="sobre-grid">
+      <div>
+        <div class="eyebrow">Sobre mim</div>
+        <h2>Mais do que tratamentos, <em>uma experiência de cuidado.</em></h2>
+        <p>Sou a <b>Dra. Letícia Teio</b>, cirurgiã-dentista e clínica geral, formada em Odontologia em São João da Boa Vista e pós-graduanda em Reabilitação Oral.</p>
+        <p>Meu atendimento une conhecimento científico, cuidado e humanização para oferecer uma experiência odontológica segura, tranquila e acolhedora — inclusive para quem tem medo ou ansiedade de ir ao dentista.</p>
+        <div class="local">
+          <div>
+            <svg viewBox="0 0 24 24"><path d="M12 21s-7-6.200-7-11.500A7 7 0 0 1 19 9.500C19 14.800 12 21 12 21z"/><circle cx="12" cy="9.500" r="2.500"/></svg>
+            <div><small>Onde estamos</small><address>R. Dr. Anor Araújo Águiar, 438<br>Jardim Santo Andre<br>São João da Boa Vista - SP<br>13874-018</address></div>
+          </div>
+          <div>
+            <svg viewBox="0 0 24 24"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11.500V16c0 1.500 2.700 3 6 3s6-1.500 6-3v-4.500M22 9v6"/></svg>
+            <div><small>Localização</small><address>Próximo à UNIFAE</address></div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="feat" style="position:relative">
+          
+          <ul style="display:grid;gap:20px;position:relative;z-index:2">
+            <li><i><svg viewBox="0 0 32 32"><use href="#i-tooth"/></svg></i>Atendimento<br>personalizado</li>
+            <li><i><svg viewBox="0 0 24 24"><path d="M12 20.500S3 15 3 8.800C3 6 5 4 7.500 4c1.700 0 3.400 1 4.500 2.700C13.100 5 14.800 4 16.500 4 19 4 21 6 21 8.800 21 15 12 20.500 12 20.500z"/></svg></i>Ambiente acolhedor<br>e sem julgamentos</li>
+            <li><i><svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 4.500-3.300 7.800-8 9-4.700-1.200-8-4.500-8-9V6z"/><path d="M8.500 12l2.500 2.500 4.500-5"/></svg></i>Tecnologia que torna<br>o seu tratamento<br>mais seguro e preciso</li>
+          </ul>
+        </div>
+        <div class="cta-box"><a class="btn wa" href="#"><svg><use href="#i-cal"/></svg>Agendar sua avaliação<svg class="arr"><use href="#i-arr"/></svg></a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>© <span id="y"></span> Letícia Teio Odontologia · São João da Boa Vista - SP</footer>
+
+<a class="btn float wa" href="#"><svg><use href="#i-cal"/></svg>Agendar sua avaliação<svg class="arr"><use href="#i-arr"/></svg></a>
+
+<script>
+  // Link do WhatsApp (mensagem pré-preenchida)
+  var WA = "https://api.whatsapp.com/send/?phone=5519999387899&text=" +
+    encodeURIComponent("Oi Dra Leticia, tudo bem? Encontrei a clínica pelo Google e gostaria de agendar uma avaliação. Poderia me passar mais informações?") +
+    "&type=phone_number&app_absent=0";
+  document.querySelectorAll("a.wa").forEach(function(a){a.href=WA;a.target="_blank";a.rel="noopener"});
+  document.getElementById("y").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
